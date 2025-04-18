@@ -1,0 +1,113 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<div class="container my-5" id="apply">
+  <div class="bg-white shadow-sm rounded p-4">
+    <h5 class="fw-bold mb-2">Business Application</h5>
+    <p class="text-muted">Do you already have a business?</p>
+
+    <!-- Certificate Type Radio -->
+    <div class="mb-4">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="certificateType" id="liability" checked>
+        <label class="form-check-label" for="liability">Idea Stage</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="certificateType" id="property">
+        <label class="form-check-label" for="property">Operational</label>
+      </div>
+    </div>
+
+    <!-- <h5 class="fw-bold mb-3">Who do you need to send certificate to?</h5> -->
+
+    <form>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label">Business name*</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Founder(s) Name*</label>
+            <input type="text" class="form-control">
+          </div>
+        <div class="col-md-6">
+          <label class="form-label">Email*</label>
+          <input type="email" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Phone number*</label>
+          <input type="text" class="form-control" required>
+        </div>
+        
+        <!-- <div class="col-md-4">
+          <label class="form-label">City*</label>
+          <input type="text" class="form-control" required>
+        </div> -->
+        <div class="col-md-4">
+          <label class="form-label">City*</label>
+          <select class="form-select" required>
+            <option value="">Select city</option>
+            <option>Alexandria</option>
+            <option>Cairo</option>
+            <!-- Add more -->
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Preferred Location</label>
+          <input type="text" class="form-control" >
+        </div>
+        <div class="col-12">
+          <label class="form-label">Project idea*</label>
+          <input type="text" class="form-control" required>
+        </div>
+      </div>
+
+      <!-- Accordion sections -->
+      <!-- <div class="accordion my-4" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coverageCollapse">
+              Coverages to be included on the certificate
+            </button>
+          </h2>
+          <div id="coverageCollapse" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Add your insurance coverage details here...
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mt-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#additionalCollapse">
+              Additional information
+            </button>
+          </h2>
+          <div id="additionalCollapse" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Additional comments or instructions...
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- File upload -->
+      <div class="mb-4">
+        <label class="form-label">Upload your project proposal</label>
+        <div class="border border-dashed p-4 rounded text-center text-muted">
+          <i class="fa-solid fa-cloud-arrow-up fa-2x mb-2"></i>
+          <p>Upload it or drag and drop your files</p>
+          <input type="file" class="form-control" style="max-width: 300px; margin: 0 auto;">
+        </div>
+      </div>
+
+      <!-- Submit button -->
+      <div class="text-end center">
+        <button class="btn btn-primary px-4" type="submit" style="background: rgb(5,5,27); border-color: rgb(5,5,27);">
+          Submit request
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

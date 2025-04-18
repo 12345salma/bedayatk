@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="b d-flex justify-content-center align-items-center">
+
+    <!-- signup page  -->
+
+    <section class="container w-50 p-2 border-3 text-center bg-white rounded-3 shadow">
+        <!-- <h1 class="mb-5 text-black fw-bolder">Smart Login System </h1> -->
+        <img src="images/white2.png" alt="" class="img-logo">
+
+        <div class="px-2">
+            <input class="form-control mb-4 shadow" type="text" placeholder="Enter your name" id="createName">
+
+            <input class="form-control mb-4 shadow " type="email" placeholder="Enter your email" id="createEmail">
+
+            <input class="form-control shadow" type="password" placeholder="Enter your password"
+                id="createPassword">
+
+
+
+            <button type="button" id="btn-signup" class="btn btn-primary w-100 my-5">Sign up</button>
+
+            <p class="text-danger bg-white fst-italic fw-medium invaliddata d-none">Please enter your data</p>
+            <p class="text-danger bg-white fw-medium exist d-none">Email already exists</p>
+
+            <span class="text-primary-emphasis">You have an account? <a href="./index.html"
+                    class="text-primary-emphasis">Log in</a>
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <script src="JS/signup.js"></script>
+
+</body>
+
+</html>
