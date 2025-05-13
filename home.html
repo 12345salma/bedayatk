@@ -1,746 +1,836 @@
 <html>
+  <head>
+    <link rel="icon" type="image/png" href="images/logo.png" />
 
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;0,600;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;0,600;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEJbPHwkWwJDEYf4e37qj2fs0P9H6r8D3eQns9xxcHpCFFq7j+6r79OgiBsFb"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEJbPHwkWwJDEYf4e37qj2fs0P9H6r8D3eQns9xxcHpCFFq7j+6r79OgiBsFb"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
     <title>Bedaytak</title>
-</head>
+  </head>
 
-
-
-<body data-bs-spy="scroll" data-bs-target="#navbarNav">
+  <body data-bs-spy="scroll" data-bs-target="#navbarNav">
     <!-- ---------------------------Nav-------------------------- -->
     <nav class="navbar navbar-expand-lg bg-light position-fixed w-100 z-3 p-2">
-        <div class="container ">
-            <a class="navbar-brand text-black text-uppercase fw-bold" href="#">Bedaytak</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active text-black" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-black" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
+      <div class="container">
+        <a class="navbar-brand text-black text-uppercase fw-bold" href="#"
+          >Bedaytak</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-black"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#About"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-black" href="#services"
+                >Services</a
+              >
+            </li>
+            <!-- <li class="nav-item">
                         <a class="nav-link active text-black" href="#portfolio"> Works</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-black" href="#carousel">Clients</a>
-                    </li>
+                    </li> -->
+            <li class="nav-item">
+              <a class="nav-link active text-black" href="#carousel">Clients</a>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active text-black" href="#contact">Contact</a>
+            <li class="nav-item">
+              <a class="nav-link active text-black" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                        <a type="buuton" class="btn btn-dark text-white p-1" href="index.html">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a type="buuton" class="btn btn-outline-dark p-1" href="index.html">Log out</a>
-                    </li>
-                </ul>
-            </div>
+          </ul>
+
         </div>
+      </div>
     </nav>
-
 
     <!-- ---------------------------HOME-------------------------- -->
     <header class="home" id="home">
-        <div class="home-layer">
-            <article>
-                <h1 class="text-white fw-bold">Your Vision. Our Execution.
-                </h1>
-                <h2 class="text-white fw-semibold"> <span id="element"></span></h2>
+      <div class="home-layer">
+        <article>
+          <h1 class="text-white fw-bold">Your Vision is Our Execution</h1>
+          <h2 class="text-white fw-semibold"><span id="element"></span></h2>
 
-                <div class="social-icon mt-3 my-2 d-flex fs-5 justify-content-center text-white">
-                    <div class="icon m-2">
-                        <i class="fa-brands fa-facebook"></i>
-                    </div>
-                    <div class="icon m-2">
-                        <i class="fa-brands fa-twitter"></i>
-                    </div>
-                    <div class="icon m-2">
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                    <div class="icon m-2">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </div>
-                    <div class="icon m-2">
-                        <i class="fa-brands fa-youtube"></i>
-                    </div>
-                    <div class="icon m-2">
-                        <i class="fa-brands fa-behance"></i>
-                    </div>
-                </div>
-            </article>
-        </div>
+          <div
+            class="social-icon mt-3 my-2 d-flex fs-5 justify-content-center text-white"
+          >
+            <div class="icon m-2">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="icon m-2">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="icon m-2">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="icon m-2">
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="icon m-2">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="icon m-2">
+              <i class="fa-brands fa-behance"></i>
+            </div>
+          </div>
+        </article>
+      </div>
     </header>
 
-    <!--About -->
+    <!-- ---------------------------About-------------------------- -->
     <div class="About" id="About">
-        <div class="container mt-5 ">
-            <div class="row">
-
-                <div class="col-md-6 mt-3">
-                    <div class="main-img">
-                        <img src="images/2.jpg" alt="" class="w-75">
-                    </div>
-
-                </div>
-
-
-                <div class="col-md-6 mt-3 lh-lg center">
-                    <h1>About Us </h1>
-
-                    <p class="fw-light">At <span class="fw-bold">Bedaytak, </span>we’re dedicated to
-                        empowering entrepreneurs and small business owners in Alexandria, Egypt, by turning ideas into
-                        data-driven decisions.
-                        <br> Our platform is designed to simplify the journey of business development—offering
-                        powerful tools for market analysis, sales optimization, and financial planning.
-                        <br> With Bedaytak, users can access expert consultancy, competitor insights, and clear financial projections, all through a user-friendly interface.
-                        <br>Whether you're launching your first venture or scaling your operations,
-                        <br> Bedaytak helps you choose the right location and strategy to grow with confidence in the Egyptian market.
-                    </p>
-
-                    <div class="progress mt-4" role="progressbar" aria-label="Basic example" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100" style="height: 25px">
-                        <div class="progress-bar bg-black" style="width: 95%">Market analysis 95%</div>
-                    </div>
-                    <div class="progress mt-4" role="progressbar" aria-label="Basic example" aria-valuenow="50"
-                        aria-valuemin="0" aria-valuemax="100" style="height: 25px">
-                        <div class="progress-bar bg-black" style="width: 80%">Expert consultancy 80%</div>
-                    </div>
-                    <div class="progress mt-4" role="progressbar" aria-label="Basic example" aria-valuenow="75"
-                        aria-valuemin="0" aria-valuemax="100" style="height: 25px">
-                        <div class="progress-bar bg-black" style="width: 90%" height: 20px>Financial planning 90%</div>
-                    </div>
-                    <div class="progress mt-4" role="progressbar" aria-label="Basic example" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100" style="height: 25px">
-                        <div class="progress-bar bg-black" style="width: 98%" height: 20px>Sales optimization 98%</div>
-                    </div>
-
-                    <div class="buttons mt-4">
-
-                        <a href="appPage.html">
-                            <button class="button-two btn  ps-3 pe-3 pt-2 pb-2 border-black">Apply now</button>
-                        </a>
-
-
-                    </div>
-                </div>
-
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6 mt-3">
+            <div class="main-img">
+              <img src="images/2.jpg" alt="" class="w-75" />
             </div>
+          </div>
+
+          <div class="col-md-6 mt-3 lh-lg center">
+            <h1>About Us</h1>
+
+            <p class="fw-light ttext-secondary-emphasi">
+              At <span class="fw-bold">Bedaytak, </span>we're dedicated to
+              empowering entrepreneurs and small business owners in Alexandria,
+              Egypt, by turning ideas into data-driven decisions. <br />
+              Our platform is designed to simplify the journey of business
+              development—offering powerful tools for market analysis, sales
+              optimization, and financial planning. <br />
+              With Bedaytak, users can access expert consultancy, competitor
+              insights, and clear financial projections, all through a
+              user-friendly interface. <br />Whether you're launching your first
+              venture or scaling your operations, <br />
+              Bedaytak helps you choose the right location and strategy to grow
+              with confidence in the Egyptian market.
+            </p>
+
+            <div id="progress-section" class="container">
+              <div class="progress mt-4" style="height: 25px">
+                <div
+                  class="progress-bar bg-black"
+                  data-width="95%"
+                  style="width: 0%"
+                >
+                  Location Intelligence 95%
+                </div>
+              </div>
+              <div class="progress mt-4" style="height: 25px">
+                <div
+                  class="progress-bar bg-black"
+                  data-width="80%"
+                  style="width: 0%"
+                >
+                  Feasibility Study 80%
+                </div>
+              </div>
+              <div class="progress mt-4" style="height: 25px">
+                <div
+                  class="progress-bar bg-black"
+                  data-width="90%"
+                  style="width: 0%"
+                >
+                  Business Guidance 90%
+                </div>
+              </div>
+              <div class="progress mt-4" style="height: 25px">
+                <div
+                  class="progress-bar bg-black"
+                  data-width="98%"
+                  style="width: 0%"
+                >
+                  Consultancy 98%
+                </div>
+              </div>
+              <div class="progress mt-4" style="height: 25px">
+                <div
+                  class="progress-bar bg-black"
+                  data-width="90%"
+                  style="width: 0%"
+                >
+                  Sales 90%
+                </div>
+              </div>
+              <div class="progress mt-4" style="height: 25px">
+                <div
+                  class="progress-bar bg-black"
+                  data-width="85%"
+                  style="width: 0%"
+                >
+                  Marketing 85%
+                </div>
+              </div>
+            </div>
+
+            <div class="buttons mt-4">
+              <a href="appPage.html">
+                <button class="button-two btn ps-3 pe-3 pt-2 pb-2 border-black">
+                  Apply now
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- ---------------------------Service-------------------------- -->
     <div class="services mt-5 pt-5 pb-5 w-90 text-center" id="services">
-        <h1 class="mb-3">SERVICES.</h1>
-        <h3 class="card-text fw-light fs-6">We empower startups from idea to growth by providing a range of professional services.</h3>
-    
-        <div class="container">
-            <div class="row justify-content-center g-4 mt-3">
-    
-                <div class="col-md-6">
-                    <div class="card order shadow border-0 rounded pt-3 d-flex justify-content-center align-items-center p-3 gap-3 h-100">
-                        <div class="icons"><i class="fa-solid fa-location-dot"></i></div>
-                        <div class="card-body">
-                            <h4>Location & Market Intelligence</h4>
-                            <p class="card-text fw-light fs-6">Helps businesses choose the best location with population, competitor, infrastructure, and traffic insights.</p>
-                        </div>
-                    </div>
+      <h1 class="mb-3">SERVICES.</h1>
+      <h3 class="card-text fw-light fs-6">
+        We empower startups from idea to growth by providing a range of
+        professional services.
+      </h3>
+
+      <div class="container">
+        <div class="row justify-content-center g-4 mt-3">
+          <!-- Service 1 -->
+          <div
+            class="col-md-6"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
+            <a
+              href="appPage.html"
+              class="text-decoration-none text-dark"
+              onclick="selectService('Location and markrt analysis')"
+            >
+              <div
+                class="card order shadow border-0 rounded pt-3 d-flex justify-content-center align-items-center p-3 gap-3 h-100"
+              >
+                <div class="icons">
+                  <i class="fa-solid fa-location-dot"></i>
                 </div>
-    
-                <div class="col-md-6">
-                    <div class="card order shadow border-0 rounded pt-3 d-flex justify-content-center align-items-center p-3 gap-3 h-100">
-                        <div class="icons"><i class="fa-solid fa-ranking-star"></i></div>
-                        <div class="card-body">
-                            <h4>Sales & Revenue Optimization</h4>
-                            <p class="card-text fw-light fs-6">Provides sales forecasting, pricing benchmarks, customer profiling, and revenue estimations to maximize profitability.</p>
-                        </div>
-                    </div>
+                <div class="card-body">
+                  <h4>Location Intelligence</h4>
+                  <p class="card-text fw-light fs-6 fst-italic">
+                    Unlock the power of location data to gain a competitive
+                    edge.<br />
+                    Our Location Intelligence service helps you understand
+                    market trends, analyze competitor movements, and make
+                    data-driven decisions that put you ahead in your industry.
+                  </p>
                 </div>
-    
-                <div class="col-md-6">
-                    <div class="card order shadow border-0 rounded pt-3 d-flex justify-content-center align-items-center p-3 gap-3 h-100">
-                        <div class="icons"><i class="fas fa-file-alt"></i></div>
-                        <div class="card-body">
-                            <h4>Financial & Marketing Support</h4>
-                            <p class="card-text fw-light fs-6">Offers budget estimators, market trend reports, and conversion strategies to optimize spending and growth.</p>
-                        </div>
-                    </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="col-md-6"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+            data-aos-delay="200"
+          >
+            <a
+              href="appPage.html"
+              class="text-decoration-none text-dark"
+              onclick="selectService('Sales estimator')"
+            >
+              <div
+                class="card order shadow border-0 rounded pt-3 d-flex justify-content-center align-items-center p-3 gap-3 h-100"
+              >
+                <div class="icons">
+                  <i class="fa-solid fa-ranking-star"></i>
                 </div>
-    
-                <div class="col-md-6">
-                    <div class="card order shadow border-0 rounded pt-3 d-flex justify-content-center align-items-center p-3 gap-3 h-100">
-                        <div class="icons"><i class="fas fa-lightbulb"></i></div>
-                        <div class="card-body">
-                            <h4>Business Consultancy & Guidance</h4>
-                            <p class="card-text fw-light fs-6">Access to expert support for refining business ideas, navigating platform tools, improving input accuracy, and receiving help during the execution phase.</p>
-                        </div>
-                    </div>
+                <div class="card-body">
+                  <h4>Sales estimator</h4>
+                  <p class="card-text fw-light fs-6 fst-italic">
+                    Maximize your sales potential with our Sales Estimator.<br />
+                    With real-time inputs and historical data, the Sales Estimator offers accurate projections tailored to your industry,
+                     helping you set realistic targets and track performance effectively.
+                  </p>
                 </div>
-    
-            </div>
+              </div>
+            </a>
+          </div>
+          <!-- MARKETING ESTIMATOR -->
+          <div
+            class="col-md-6"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+            data-aos-delay="200"
+          >
+            <a
+              href="appPage.html"
+              class="text-decoration-none text-dark"
+              onclick="selectService('Marketing estimator')"
+            >
+              <div
+                class="card order shadow border-0 rounded pt-3 d-flex justify-content-center align-items-center p-3 gap-3 h-100"
+              >
+                <div class="icons">
+                  <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <div class="card-body">
+                  <h4>Marketing estimator</h4>
+                  <p class="card-text fw-light fs-6 fst-italic">
+                    Take the guesswork out of marketing with our estimation service.
+We help you predict campaign costs, audience reach, and conversion potential based on your goals.
+Make informed decisions and allocate your marketing budget wisely.
+
+
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="col-md-6"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+            data-aos-delay="200"
+          >
+            <a
+              href="appPage.html"
+              class="text-decoration-none text-dark"
+              onclick="selectService('Feasibility Study')"
+            >
+              <div
+                class="card order shadow border-0 rounded pt-3 d-flex justify-content-center align-items-center p-3 gap-3 h-100"
+              >
+                <div class="icons"><i class="fas fa-file-alt"></i></div>
+                <div class="card-body">
+                  <h4>Feasibility Study</h4>
+                  <p class="card-text fw-light fs-6 fst-italic">
+                    Make informed decisions with our comprehensive Feasibility
+                    Study.<br />
+                    We provide in-depth analysis of your project's viability,
+                    assessing market demand, financial projections, and risk
+                    factors to ensure you're poised for success.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Service 4 -->
+          <div
+            class="col-md-6"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+            data-aos-delay="200"
+          >
+            <a
+              href="appPage.html"
+              class="text-decoration-none text-dark"
+              onclick="selectService('Business guide')"
+            >
+              <div
+                class="card order shadow border-0 rounded pt-3 d-flex justify-content-center align-items-center p-3 gap-3 h-100"
+              >
+                <div class="icons"><i class="fas fa-lightbulb"></i></div>
+                <div class="card-body">
+                  <h4>Business Guidance</h4>
+                  <p class="card-text fw-light fs-6 fst-italic">
+                    Navigate the complexities of business growth with expert
+                    Business Guidance. Whether you're starting a new venture or
+                    scaling an existing one, our strategic insights help you
+                    chart the best course for long-term success.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Service 5 -->
+          <div
+            class="col-md-6"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+            data-aos-delay="200"
+          >
+            <a
+              href="appPage.html"
+              class="text-decoration-none text-dark"
+              onclick="selectService('Business Consultancy')"
+            >
+              <div
+                class="card order shadow border-0 rounded pt-3 d-flex justify-content-center align-items-center p-3 gap-3 h-100"
+              >
+                <div class="icons"><i class="fas fa-user-tie"></i></div>
+                <div class="card-body">
+                  <h4>Business Consultancy</h4>
+                  <p class="card-text fw-light fs-6 fst-italic">
+                    Empower your business with tailored Business Consultancy
+                    services. Our team of experienced professionals delivers
+                    actionable strategies that address your unique challenges,
+                    driving growth, efficiency, and competitive advantage.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
-    </div>
-    
-    
-
-    <!-- ---------------------------portfolio------------------------->
-    <div class="portfolio pt-5 " id="portfolio">
-        <h1 class="text-center"> Portfolio.</h1>
-        <ul class="nav nav-pills mb-3 justify-content-center mt-5" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-ALL-tab" data-bs-toggle="pill" data-bs-target="#pills-ALL"
-                    type="button" role="tab" aria-controls="pills-ALL" aria-selected="true">ALL</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-Brand-tab" data-bs-toggle="pill" data-bs-target="#pills-Brand"
-                    type="button" role="tab" aria-controls="pills-Brand" aria-selected="false">Brand</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-Design-tab" data-bs-toggle="pill" data-bs-target="#pills-Design"
-                    type="button" role="tab" aria-controls="pills-Design" aria-selected="false">Design</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-Graphic-tab" data-bs-toggle="pill" data-bs-target="#pills-Graphic"
-                    type="button" role="tab" aria-controls="pills-Graphic" aria-selected="false">Graphic</button>
-            </li>
-
-        </ul>
-
-
-        <div class="tab-content d-flex justify-content-center" id="pills-tabContent">
-
-            <div class="tab-pane fade show active" id="pills-ALL" role="tabpanel" aria-labelledby="pills-ALL-tab"
-                tabindex="0">
-                <div class="container">
-                    <div class="row g-4">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="img-container position-relative">
-                                <img src="imgs/imgs/portfolio/1.jpg" alt="WEB DESIGN" class="w-100 d-block">
-                                <div class="layer d-flex justify-content-center align-items-center">
-                                    <div class="icons ">
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="img-container position-relative">
-                                <img src="imgs/imgs/portfolio/2.jpg" alt="WEB DESIGN" class="w-100 d-block">
-                                <div class="layer d-flex justify-content-center align-items-center">
-                                    <div class="icons">
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="img-container position-relative">
-                                <img src="imgs/imgs/portfolio/3.jpg" alt="WEB DESIGN" class="w-100 d-block">
-                                <div class="layer d-flex justify-content-center align-items-center">
-                                    <div class="icons">
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="img-container position-relative">
-                                <img src="imgs/imgs/portfolio/4.jpg" alt="WEB DESIGN" class="w-100 d-block">
-                                <div class="layer d-flex justify-content-center align-items-center">
-                                    <div class="icons">
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="img-container position-relative">
-                                <img src="imgs/imgs/portfolio/5.jpg" alt="WEB DESIGN" class="w-100 d-block">
-                                <div class="layer d-flex justify-content-center align-items-center">
-                                    <div class="icons">
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="img-container position-relative">
-                                <img src="imgs/imgs/portfolio/6.jpg" alt="WEB DESIGN" class="w-100 d-block">
-                                <div class="layer d-flex justify-content-center align-items-center">
-                                    <div class="icons">
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="pills-Brand" role="tabpanel" aria-labelledby="pills-Brand-tab" tabindex="0">
-                <div class="container">
-                    <div class="row g-4">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="img-container position-relative">
-                                <img src="imgs/imgs/portfolio/4.jpg" alt="" class="w-100 d-block">
-                                <div class="layer d-flex justify-content-center align-items-center">
-                                    <div class="icons ">
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="img-container position-relative">
-                                <img src="imgs/imgs/portfolio/6.jpg" alt="" class="w-100 d-block">
-                                <div class="layer d-flex justify-content-center align-items-center">
-                                    <div class="icons">
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-pane fade" id="pills-Design" role="tabpanel" aria-labelledby="pills-Design-tab"
-                tabindex="0">
-                <div class="container">
-                    <div class="row g-4">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="img-container position-relative">
-                                <img src="imgs/imgs/portfolio/2.jpg" alt="" class="w-100 d-block">
-                                <div class="layer d-flex justify-content-center align-items-center">
-                                    <div class="icons ">
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="img-container position-relative">
-                                <img src="imgs/imgs/portfolio/5.jpg" alt="" class="w-100 d-block">
-                                <div class="layer d-flex justify-content-center align-items-center">
-                                    <div class="icons">
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-pane fade" id="pills-Graphic" role="tabpanel" aria-labelledby="pills-Graphic-tab"
-                tabindex="0">
-                <div class="container">
-                    <div class="row g-4">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="img-container position-relative">
-                                <img src="imgs/imgs/portfolio/1.jpg" alt="" class="w-100 d-block">
-                                <div class="layer d-flex justify-content-center align-items-center">
-                                    <div class="icons ">
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="img-container position-relative">
-                                <img src="imgs/imgs/portfolio/3.jpg" alt="" class="w-100 d-block">
-                                <div class="layer d-flex justify-content-center align-items-center">
-                                    <div class="icons">
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="img-container position-relative">
-                                <img src="imgs/imgs/portfolio/5.jpg" alt="" class="w-100 d-block">
-                                <div class="layer d-flex justify-content-center align-items-center">
-                                    <div class="icons">
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- --------------------------carousel----------------------- -->
-    <div class="carousel-items my-5 pb-5 pt-5 d-flex flex-column" id="carousel">
-        <h1 class="mb-3 pt-3 mx-auto">Testimonial.</h1>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-10">
-                    <div id="carouselExampleIndicators" class="carousel slide py-5" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-
-                        </div>
-                        <div class="carousel-inner overflow-visible">
-                            <div class="carousel-item active">
-                                <div class="text-center p-3">
-                                    <img src="imgs/imgs/testimonial/testi-2.jpg"
-                                        class="testimonial-img rounded-circle translate-middle-y w-10" alt="">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, doloribus.
-                                    </p>
-                                    <h3 class="fs-6">Alex Smith</h3>
-                                    <h4 class="fw-light fs-6">Inveto Customer</h4>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="text-center p-3">
-                                    <img src="imgs/imgs/testimonial/testi-2.jpg"
-                                        class="testimonial-img rounded-circle translate-middle-y w-10" alt="">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, doloribus.
-                                    </p>
-                                    <h3 class="fs-6">Alex Smith</h3>
-                                    <h4 class="fw-light fs-6">Inveto Customer</h4>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="text-center p-3">
-                                    <img src="imgs/imgs/testimonial/testi-2.jpg"
-                                        class="testimonial-img rounded-circle translate-middle-y w-10" alt="">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, doloribus.
-                                    </p>
-                                    <h3 class="fs-6">Alex Smith</h3>
-                                    <h4 class="fw-light fs-6">Inveto Customer</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
     <!-- --------------------------Awards----------------------- -->
     <div class="Awards mt-5 mb-5" id="Awards">
-
-        <div class="container text-center pt-5 pb-5">
-            <div class="row">
-
-                <div class="col">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="icons m-4 fs-3"> <i class="fa fa-users"></i> </div>
-                    </div>
-
-                    <article class="text-dark">
-                        <h3>850</h3>
-                        <h5 class="lead">Happy Customers </h5>
-                    </article>
-                </div>
-
-                <div class="col">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="icons m-4 fs-3"> <i class="fa fa-thumbs-up"></i></div>
-                    </div>
-                    <article class="text-dark">
-                        <h3>230</h3>
-                        <h5 class="lead">Complete projects </h5>
-                    </article>
-                </div>
-
-                <div class="col">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="icons m-4 fs-3"> <i class="fa fa-bullhorn"></i></div>
-                    </div>
-                    <article class="text-dark">
-                        <h3>9450</h3>
-                        <h5 class="lead">Achievements</h5>
-                    </article>
-                </div>
-
-                <div class="col">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="icons m-4 fs-3"> <i class="fa fa-cloud-download"></i></div>
-                    </div>
-                    <article class="text-dark">
-                        <h3>780</h3>
-                        <h5 class="lead">files downloaded</h5>
-                    </article>
-                </div>
+      <div class="container text-center pt-5 pb-5">
+        <div class="row">
+          <div class="col">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="icons m-4 fs-3"><i class="fa fa-users"></i></div>
             </div>
+            <article class="text-dark">
+              <h3 class="counter" data-target="300">0</h3>
+              <h5 class="lead">Happy Customers</h5>
+            </article>
+          </div>
+
+          <div class="col">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="icons m-4 fs-3"><i class="fa fa-thumbs-up"></i></div>
+            </div>
+            <article class="text-dark">
+              <h3 class="counter" data-target="230">0</h3>
+              <h5 class="lead">Complete projects</h5>
+            </article>
+          </div>
+
+          <div class="col">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="icons m-4 fs-3"><i class="fa fa-bullhorn"></i></div>
+            </div>
+            <article class="text-dark">
+              <h3 class="counter" data-target="950">0</h3>
+              <h5 class="lead">Achievements</h5>
+            </article>
+          </div>
+
+          <div class="col">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="icons m-4 fs-3">
+                <i class="fa fa-cloud-download"></i>
+              </div>
+            </div>
+            <article class="text-dark">
+              <h3 class="counter" data-target="250">0</h3>
+              <h5 class="lead">files downloaded</h5>
+            </article>
+          </div>
         </div>
+      </div>
     </div>
 
+    <!-- ---------------------------portfolio------------------------->
 
-
-    <!-- --------------------------contact-us----------------------- -->
-    <!-- <div class="contact text-center mt-5 mb-5" id="contact">
-        <h1>Contact Us.</h1>
-        <div class="container">
-            <div class="p-2 text-black-50">
-                <h5>
-                    Got a project idea? Contact us and start turning your vision into reality.
-                </h5>
-            </div>
-            <div class="row py-4">
-                <div class="col-md-6 col-lg-4">
-                    <span class="icon"><i class="fa fa-location-arrow"></i></span>
-                    <h6>Address</h6>
-                    <p>6834 Hollywood Blvd - Los Angeles CA</p>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <span class="icon"><i class="fa fa-envelope"></i></span>
-                    <h6>Email</h6>
-                    <p>Bedaytak@website.com</p>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <span class="icon"><i class="fa fa-phone"></i></span>
-                    <h6>Phone</h6>
-                    <p>+20 010 2517 8918</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-6">
-                    <input id="uName" type="text" placeholder="Name" class="form-control py-2 px-1" />
-                </div>
-                <div class="col-6">
-                    <input id="email" type="email" placeholder="Email" class="form-control py-2 px-1" />
-                </div>
-                <div class="col-12">
-                    <input id="massage" type="text" placeholder="Massage" class="form-control message py-2 px-1" />
-                </div>
-
-            </div>
-            <button class="button btn justify-content-end d-flex mt-3 text-center p-2">SUBMIT</button>
-        </div>
-    </div> -->
-
-    <!-- --------------------------footer----------------------- -->
-    <!-- <footer class="bg-dark text-white pt-5 pb-3">
-        <div class="container">
-            <div class="row">
-
-                
-                <div class="col-md-4 mb-4">
-                    <img src="logo.png" alt="POMAC Logo" class="mb-3" style="height: 40px;">
-                    <p>
-                        POMAC is a startup studio that enables entrepreneurs to launch companies in various tech
-                        sectors. We offer a
-                        wide range of paid services needed throughout the journey of launching and growing a business.
+    <div class="carousel-items my-5 pb-5 pt-5 d-flex flex-column" id="carousel">
+      <h1 class="mb-3 pt-3 mx-auto">Testimonial.</h1>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide py-5"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+              </div>
+              <div class="carousel-inner overflow-visible">
+                <div class="carousel-item active">
+                  <div class="text-center p-3">
+                    <img
+                      src="images/Gemini_Generated_Image_o7rlfdo7rlfdo7rl.jpg"
+                      class="testimonial-img rounded-circle translate-middle-y w-10"
+                      alt=""
+                    />
+                    <p class="fst-italic">
+                      "Consultaning BEDAYTAK was a game-changer for us.<br />
+                      Their expertise and dedication helped us launch faster and
+                      smarter than we ever imagined."
                     </p>
-                    <p>
-                        <i class="fas fa-phone-alt me-2"></i> +201094969284<br>
-                        <i class="fas fa-envelope me-2"></i> info@pomac.info<br>
-                        <i class="fas fa-map-marker-alt me-2"></i> Roushdy, Alexandria, Egypt
+                    <h3 class="fs-6">Sarah Elridge</h3>
+                    <h4 class="fw-light fs-6">Luminova Labs</h4>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="text-center p-3">
+                    <img
+                      src="images/Gemini_Generated_Image_p23g8sp23g8sp23g.jpg"
+                      class="testimonial-img rounded-circle translate-middle-y w-10"
+                      alt=""
+                    />
+                    <p class="fst-italic">
+                      "The team at BEDAYTAK truly understood our vision for
+                      clean energy innovation.<br />
+                      Their support made all the difference in our growth
+                      journey."
                     </p>
+                    <h3 class="fs-6">Marcus Devlin</h3>
+                    <h4 class="fw-light fs-6">GreenPulse Energy</h4>
+                  </div>
                 </div>
-
-                
-                <div class="col-md-2 mb-4">
-                    <h5>Explore</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Our Work</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Services</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
-                    </ul>
+                <div class="carousel-item">
+                  <div class="text-center p-3">
+                    <img
+                      src="images/Gemini_Generated_Image_5x2mcw5x2mcw5x2m.jpg"
+                      class="testimonial-img rounded-circle translate-middle-y w-10"
+                      alt=""
+                    />
+                    <p class="fst-italic">
+                      "Working with BEDAYTAK felt like having an extension of
+                      our own team.<br />
+                      They delivered outstanding service and creative solutions
+                      at every step."
+                    </p>
+                    <h3 class="fs-6">Priya Malhotra</h3>
+                    <h4 class="fw-light fs-6">ByteNest</h4>
+                  </div>
                 </div>
-
-                
-                <div class="col-md-2 mb-4">
-                    <h5>Info Center</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">FAQs</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Glossary</a></li>
-                    </ul>
+                <div class="carousel-item">
+                  <div class="text-center p-3">
+                    <img
+                      src="images/Gemini_Generated_Image_o7rlflo7rlflo7rl.jpg"
+                      class="testimonial-img rounded-circle translate-middle-y w-10"
+                      alt=""
+                    />
+                    <p class="fst-italic">
+                      "We couldn't have scaled Velora Health without BEDAYTAK.
+                      <br />Their professionalism, insight, and care for our
+                      success were beyond our expectations."
+                    </p>
+                    <h3 class="fs-6">Jonathan Pierce</h3>
+                    <h4 class="fw-light fs-6">Velora Health</h4>
+                  </div>
                 </div>
-
-                
-                <div class="col-md-4 mb-4 text-md-end text-center">
-                    <h5>Follow Us</h5>
-                    <a href="#" class="text-white me-3"><i class="fab fa-behance fa-lg"></i></a>
-                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
-                    <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-linkedin-in fa-lg"></i></a>
-                </div>
-
+              </div>
             </div>
-
-            
-            <div class="text-center mt-4 border-top pt-3">
-                <small>All rights reserved © 2024 POMAC</small>
-                <div class="text-muted mt-1" style="font-size: 0.8rem;">v 1.12.25</div>
-            </div>
+          </div>
         </div>
-    </footer> -->
-
-
-     <!-- ------------------------message us------------------------- -->
-     <div class="message-us mt-5" id="contact">
-        <div class="message-layer pt-5 pb-5">
-            <div class="container shadow mt-5 pt-4 pb-4 ">
-                <div class="row">
-
-                    <div class="col-md-6 ms-3 mt-3 ">
-                        <h2 class="position-relative">Take A Step Towards Us</h2>
-                        <form class="mt-5 ">
-                            <div class="row gy-4">
-                                <input id="uName/" type="text" placeholder="Your Name" class="form-control" />
-                                <input id="email" type="email" placeholder="Your Email" class="form-control" />
-                                <input id="subject" type="text" placeholder="Subject" class="form-control" />
-                                <input id="massage" type="text" placeholder="Massage" class="form-control" />
-                            </div>
-                        </form>
-                        <div class="click d-flex justify-content-center align-items-center">
-                            <button class="btn btn-primary ps-3 pe-3 pt-2 pb-2">SEND MASSAGE</button>
-                        </div>
-
-                    </div>
-
-                    <div class="col ms-3 mt-3">
-                        <h2 class="position-relative">Get in touch</h2>
-                        <p class="mt-4 fs-5 lead">
-                            We’re here to make things easier—whether it’s choosing the right location, understanding your market, or planning your next move.<br>
-                            No pressure, just real support from people who get it.<br>
-                            Drop us a message—we’d love to hear from you!</p>
-                        <span class="d-flex">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <h6 class="ms-2">Alexandria, Egypt</h6>
-                        </span>
-                        <span class="d-flex">
-                            <i class="fa-solid fa-mobile-screen"></i>
-                            <h6 class="ms-2"> (617) 557-0089</h6>
-                        </span>
-                        <span class="d-flex">
-                            <i class="fa-regular fa-envelope"></i>
-                            <h6 class="ms-2">Bedaytak@gmail.com</h6>
-                        </span>
-
-                        <div class="social-icon-contact my-2 d-flex w-50 justify-content-between">
-                            <div class="icon">
-                                <i class="fa-brands fa-facebook"></i>
-                            </div>
-                            <div class="icon">
-                                <i class="fa-brands fa-twitter"></i>
-                            </div>
-                            <div class="icon">
-                                <i class="fa-brands fa-instagram"></i>
-                            </div>
-                            <div class="icon">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
+    <!-- ------------------------message us------------------------- -->
+    <div class="message-us mt-5" id="contact">
+      <div class="message-layer pt-5 pb-5">
+        <div class="container shadow mt-5 pt-4 pb-4">
+          <div class="row">
+            <!-- Left Column: Contact Form -->
+            <div class="col-md-6 ms-3 mt-3">
+              <h2 class="position-relative">Take A Step Towards Us</h2>
+
+              <!--  Added form id and placed button inside the form -->
+              <form class="mt-5" id="contactForm">
+                <div class="row gy-4">
+                  <!-- <div class="col-12">
+                                    <input id="uName" name="uName" type="text" placeholder="Your Name"
+                                        class="form-control" required />
+                                </div>
+                                <div class="col-12">
+                                    <input id="email" name="email" type="email" placeholder="Your Email"
+                                        class="form-control" required />
+                                </div> -->
+                  <div class="col-12">
+                    <input
+                      id="subject"
+                      name="subject"
+                      type="text"
+                      placeholder="Subject"
+                      class="form-control"
+                    />
+                  </div>
+
+                  <div class="col-12">
+                    <textarea
+                      id="message"
+                      name="message"
+                      placeholder="Message"
+                      class="form-control"
+                      rows="5"
+                    ></textarea>
+                  </div>
+
+                  <!-- <div class="col-12">
+                                    <input id="message" name="message" type="text" placeholder="Message"
+                                        class="form-control" />
+                                </div> -->
+
+                  <!--  Moved the button inside the form -->
+                  <div class="col-12 text-center">
+                    <button
+                      type="submit"
+                      class="btn btn-primary ps-3 pe-3 pt-2 pb-2"
+                    >
+                      SEND MESSAGE
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- Right Column: Contact Info -->
+            <div class="col ms-3 mt-3">
+              <h2 class="position-relative">Get in touch</h2>
+              <p class="mt-4 fs-5 lead">
+                W're here to make things easier—whether it's choosing the right
+                location, understanding your market, or planning your next move.
+                No pressure, just real support from people who get it. Drop us a
+                message—we'd love to hear from you!
+              </p>
+
+              <span class="d-flex">
+                <i class="fa-solid fa-location-dot"></i>
+                <h6 class="ms-2">Alexandria, Egypt</h6>
+              </span>
+              <span class="d-flex">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <h6 class="ms-2">(617) 557-0089</h6>
+              </span>
+              <span class="d-flex">
+                <i class="fa-regular fa-envelope"></i>
+                <h6 class="ms-2">Bedaytak@gmail.com</h6>
+              </span>
+
+              <div
+                class="social-icon-contact my-2 d-flex w-50 justify-content-between"
+              >
+                <div class="icon">
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a
+      href="/services/report-page.html"
+      class="btn btn-success position-fixed bottom-0 end-0 m-4 shadow"
+    >
+      📄 View Service Report
+    </a>
     <!-- ------------------------footer------------------------- -->
     <div class="footer p-3">
-        <div class="card-footer text-center text-white">
-            <p class="text-white"> <i class="fa-regular fa-copyright m-2 text-white"></i>Copyright <span class="fw-bold">Bedaytak.</span> All Rights
-                Reserved</p>
+      <div class="card-footer text-center text-white">
+        <p class="text-white">
+          <i class="fa-regular fa-copyright m-2 text-white"></i>Copyright
+          <span class="fw-bold">Bedaytak.</span> All Rights Reserved
+        </p>
 
-            <p class="text-white">Designed by BootstrapMade</p>
-        </div>
-    </div> 
+        <p class="text-white fst-italic">Designed by BedaytakTeam</p>
+      </div>
+    </div>
 
-
-
-
-    <script src="JS/bootstrap.bundle.min.js"> </script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Think It.', 'Build It.', 'Scale It.'],
-            typeSpeed: 90,
-            backspeed: 100,
-            loop: true,
-            loopcount: Infinity,
-            howCursor: true,
-            cursorChar: '|',
-            autoInsertCss: true,
+    <script src="JS/contact.js"></script>
+    <script src="JS/home.js"></script>
 
-        });
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Think It.", "Build It.", "Scale It."],
+        typeSpeed: 90,
+        backspeed: 100,
+        loop: true,
+        loopcount: Infinity,
+        howCursor: true,
+        cursorChar: "|",
+        autoInsertCss: true,
+      });
     </script>
 
+    <script>
+      function selectService(serviceName) {
+        localStorage.setItem("selectedService", serviceName);
+      }
+    </script>
 
-</body>
+    <script>
+      const counters = document.querySelectorAll(".counter");
 
+      const runCounter = (counter) => {
+        const target = +counter.getAttribute("data-target");
+        counter.innerText = "0";
 
-<!-- home page  -->
-<!-- <body class="position-relative">
-<nav class="navbar p-2">
-    <div class="container m-auto">
-        <img src="images/white2.png" alt="" class="w-25">
-        <a type="buuton" class="btn btn-outline-dark" href="index.html">log out</a>
-    </div>
-</nav>
+        const updateCount = () => {
+          const count = +counter.innerText;
+          const increment = target / 200;
 
-<section class="container w-50 my-5 border-4 p-5 text-center home">
-<div class="text-dark"> 
-    <p class="fs-1 me-2 fw-bold">Welcome</p>
-    <p class="fs-1 fw-bold currentUser"></p>
+          if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCount, 10);
+          } else {
+            counter.innerText = target;
+          }
+        };
 
-</div>
-</section>
-   
+        updateCount();
+      };
 
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              counters.forEach((counter) => runCounter(counter));
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+      observer.observe(document.querySelector("#Awards"));
+    </script>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const progressBars = document.querySelectorAll(".progress-bar");
 
+        // Function to fill the bars with a staggered effect
+        const fillBars = () => {
+          progressBars.forEach((bar, index) => {
+            const targetWidth = bar.getAttribute("data-width");
+            const delay = index * 500; // Stagger the fill by 500ms for each bar
 
+            // Set initial width to 0 before animation
+            bar.style.transition = "none";
+            bar.style.width = "0%";
 
+            // Animate width to the target width after a delay
+            setTimeout(() => {
+              bar.style.transition = "width 1.2s ease-out"; // Smooth transition
+              bar.style.width = targetWidth;
+            }, delay);
+          });
+        };
 
-    
-    <script src="JS/home.js"></script>
-</body> -->
+        // Function to reset progress bars back to 0% when out of view
+        const resetBars = () => {
+          progressBars.forEach((bar) => {
+            bar.style.transition = "none"; // Disable transition while resetting
+            bar.style.width = "0%"; // Reset width to 0%
+          });
+        };
 
+        // IntersectionObserver to trigger the animation when the section is in view
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                fillBars(); // Trigger animation when in view
+              } else {
+                resetBars(); // Reset bars when out of view
+              }
+            });
+          },
+          { threshold: 0.5 }
+        ); // Trigger when 50% of the section is visible
+
+        // Observe the progress section
+        const progressSection = document.getElementById("progress-section");
+        observer.observe(progressSection);
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Initialize AOS
+      AOS.init();
+    </script>
+  </body>
 </html>

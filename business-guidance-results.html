@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feasibility study</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/payment.css" />
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="stylesheet" href="css/guidance-repo.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+      .section-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #0d6efd;
+        margin-bottom: 1rem;
+      }
+
+      .estimation-card {
+        border-left: 5px solid #0d6efd;
+        background-color: #f8f9fa;
+        padding: 1rem 1.5rem;
+        border-radius: 12px;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .list-group-item strong {
+        color: #495057;
+      }
+
+      .text-success {
+        color: green;
+      }
+
+      .text-danger {
+        color: red;
+      }
+    </style>
+  </head>
+  <body class="guidance-repo">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card p-5 shadow rounded-4">
+            <h3 class="mb-4 text-center fst-italic fw-bolder">Business Guidance Results</h3>
+
+            <!-- Estimation Results -->
+            <div id="result"></div>
+
+            <!-- Optional chart or graphic -->
+            <div class="text-center">
+              <button
+                onclick="window.location.href='home.html'"
+                class="btn btn-primary go-home-btn"
+              >
+                Go Home
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="JS/guidanceResults.js"></script>
+  </body>
+</html>

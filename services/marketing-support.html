@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales & Marketing Estimator - BEDAYTAK</title>
+    <link rel="icon" type="image/png" href="../images/logo.png" />
+    <link rel="stylesheet" href="../css/sales.css" />
+  </head>
+
+  <body>
+    <header>BEDAYTAK - Marketing Estimator</header>
+
+    <div class="container text-center mt-5">
+      <h1 id="serviceTitle"></h1>
+
+      <div class="container">
+        <div class="main-content">
+          <div class="sales">
+            <form id="estimatorForm">
+              <!-- Marketing Estimator Section -->
+              <div class="main-content">
+                <h2>Marketing Estimator</h2>
+                <p>
+                  Curious about your campaign's potential impact?<br />
+                  Try our Marketing Estimator and plan your strategy with data.
+                </p>
+
+                <div class="form-group">
+                  <label for="marketingBudget">Monthly marketing budget:</label>
+                  <input
+                    type="text"
+                    id="marketingBudget"
+                    name="marketingBudget"
+                    placeholder="Ex: 200LE"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="costPerView"
+                    >Estimated cost per view/click:</label
+                  >
+                  <input
+                    type="number"
+                    id="costPerView"
+                    name="costPerView"
+                    placeholder="Ex: 20LE"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="conversionRate">Estimated conversion rate:</label>
+                  <input
+                    type="number"
+                    id="conversionRate"
+                    name="conversionRate"
+                    placeholder="Ex: 2%"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="sales-channels"
+                    >Primary Distribution Channels:</label
+                  >
+                  <select id="sales-channels" name="sales-channels" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="online">
+                      Online (E-commerce, Social Media)
+                    </option>
+                    <option value="offline">
+                      Offline (Retail, Office, Door-to-Door Sales)
+                    </option>
+                    <option value="both">Both Online & Offline</option>
+                  </select>
+                </div>
+              </div>
+
+              <br />
+
+              <div class="form-group">
+                <button type="submit" id="submit-marketing">Submit</button>
+              </div>
+            </form>
+          </div>
+          <!-- sales div -->
+        </div>
+        <!-- main-content div -->
+      </div>
+      <!-- container div -->
+    </div>
+    <!-- outer container -->
+
+    <!-- Scripts -->
+    <script>
+      const serviceName = localStorage.getItem("selectedService") || "Service";
+      document.getElementById("serviceTitle").textContent = serviceName;
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/marketing.js"></script>
+  </body>
+</html>

@@ -1,46 +1,64 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Log In</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;0,600;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 
-<body>
-    <body class="b d-flex justify-content-center align-items-center">
+<body class="d-flex justify-content-center align-items-center min-vh-100 bg-light">
 
-        <!-- login page  -->
-    
-        <section class="container w-50 p-2 border-3 text-center bg-white rounded-3 shadow ">
-            <!-- <h1 class="mb-5 text-black fw-bolder">Welcome back!</h1> -->
-             <img src="images/white2.png" alt="" class="img-logo">
-            
-    
-            <div class="px-2">
-                <input class="form-control mb-4 shadow" type="email" placeholder="Enter your email"
-                    aria-label="default input example" id="EmailLogin" oninput="">
-    
-                <input class="form-control shadow" type="password" placeholder="Enter your password"
-                    aria-label="default input example" id="PasswordLogin" oninput="">
-    
-                <p class="text-white mt-4 bg-danger py-2 bg-opacity-75 rounded-5 d-none">Invalid email or password</p>
-    
-                <button type="button" id="btnLogin" class="btn btn-primary w-100 my-5">Log in</button>
-    
-                <p class="text-danger bg-white fst-italic fw-medium invaliddata d-none">Invalid data!</p>
-     
-                <span class="text-primary-emphasis">Don't have an account? <a href="./signup.html" class="text-primary-emphasis" >Sign up</a>
-                </span>
-    
-            </div>
-    
-        </section>
+  <div class="login-card text-center">
+    <!-- Logo -->
+    <div class="logo-wrapper text-center mb-3">
+      <img src="images/1-removebg-preview.png" alt="Logo" class="logo-img img-fluid" />
+    </div>
 
-        <script src="JS/index.js"></script>
-        <script src="JS/signup.js"></script>
-        <script src="JS/home.js"></script>
+    <!-- Title -->
+    <h4 class="fw-bold mb-2">Welcome Back!</h4>
+    <p class="text-muted mb-4">Log in to continue</p>
 
+    <!-- Form Fields -->
+    <div class="mb-3">
+      <input class="form-control shadow-sm" type="email" placeholder="Enter your email" id="EmailLogin" />
+    </div>
+    <div class="mb-3 position-relative">
+      <input class="form-control shadow-sm password-input" type="password" placeholder="Enter your password"
+        id="PasswordLogin" />
+      <span class="toggle-password"><i></i></span>
+    </div>
 
-    </body>
+    <!-- Error Messages -->
+    <p class="text-danger fst-italic fw-medium invaliddata d-none">Invalid email or password</p>
+
+    <!-- Log In Button -->
+    <button type="button" id="btnLogin" class="btn btn-dark w-100 mb-3">Log In</button>
+
+    <!-- Sign Up Link -->
+    <p class="text-muted">
+      Don't have an account?
+      <a href="./signup.html" class="text-decoration-none fw-semibold text-primary">Sign up</a>
+    </p>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="JS/index.js"></script>
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
 
 </html>

@@ -1,48 +1,73 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;0,600;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign Up</title>
+
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/signup.css" />
 </head>
+<body class="d-flex justify-content-center align-items-center min-vh-100 bg-light">
 
-<body class="b d-flex justify-content-center align-items-center">
+  <div class="signup-card text-center">
 
-    <!-- signup page  -->
+    <!-- Logo -->
+    <div class="logo-wrapper text-center mb-3">
+      <img src="images/1-removebg-preview.png" alt="Logo" class="logo-img img-fluid" />
+    </div>
 
-    <section class="container w-50 p-2 border-3 text-center bg-white rounded-3 shadow">
-        <!-- <h1 class="mb-5 text-black fw-bolder">Smart Login System </h1> -->
-        <img src="images/white2.png" alt="" class="img-logo">
+    <!-- Title -->
+    <h4 class="fw-bold mb-2">Create Your Account</h4>
+    <p class="text-muted mb-4">Start your journey with us</p>
 
-        <div class="px-2">
-            <input class="form-control mb-4 shadow" type="text" placeholder="Enter your name" id="createName">
+    <!-- Form Fields -->
+    <div class="mb-3">
+      <input class="form-control shadow-sm" type="text" placeholder="Enter your name" id="createName" />
+    </div>
+    <div class="mb-3">
+      <input class="form-control shadow-sm" type="email" placeholder="Enter your email" id="createEmail" />
+    </div>
+    <div class="mb-3 position-relative">
+      <input class="form-control shadow-sm password-input" type="password" placeholder="Enter your password" id="createPassword" />
+      <span class="toggle-password"><i></i></span>
+    </div>
+    <div class="mb-3 position-relative">
+      <input class="form-control shadow-sm password-input" type="password" placeholder="Confirm your password" id="confirmPassword" />
+      <span class="toggle-password"><i></i></span>
+    </div>
 
-            <input class="form-control mb-4 shadow " type="email" placeholder="Enter your email" id="createEmail">
+    <!-- Error Messages -->
+    <p class="text-danger fst-italic fw-medium invaliddata d-none">Please enter valid data</p>
+    <p class="text-danger fw-medium exist d-none">Email already exists</p>
+    <p class="text-danger fw-medium nomatch d-none">Passwords do not match</p>
+    <p class="text-danger fw-medium d-none email-error">Invalid email format</p>
+    <p class="text-danger fw-medium d-none name-error">Invalid name format</p>
+    <p class="text-danger fw-medium d-none password-error">Password must contain at least one uppercase letter, one lowercase letter, one number and be at least 8 characters long</p>
 
-            <input class="form-control shadow" type="password" placeholder="Enter your password"
-                id="createPassword">
+    <!-- Sign Up Button -->
+    <button type="button" id="btn-signup" class="btn btn-dark w-100 mb-3">Sign Up</button>
 
+    <!-- Login Link -->
+    <p class="text-muted">
+      Already have an account?
+      <a href="index.html" class="text-decoration-none fw-semibold text-primary">Log in</a>
+    </p>
+  </div>
 
-
-            <button type="button" id="btn-signup" class="btn btn-primary w-100 my-5">Sign up</button>
-
-            <p class="text-danger bg-white fst-italic fw-medium invaliddata d-none">Please enter your data</p>
-            <p class="text-danger bg-white fw-medium exist d-none">Email already exists</p>
-
-            <span class="text-primary-emphasis">You have an account? <a href="./index.html"
-                    class="text-primary-emphasis">Log in</a>
-            </span>
-
-        </div>
-
-    </section>
-
-
-
-
-
-    <script src="JS/signup.js"></script>
-
+  <!-- JavaScript -->
+  <script src="JS/signup.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
-
 </html>

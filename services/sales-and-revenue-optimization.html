@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales & Marketing Estimator - BEDAYTAK</title>
+    <link rel="icon" type="image/png" href="../images/logo.png" />
+    <link rel="stylesheet" href="../css/sales.css" />
+  </head>
+
+  <body>
+    <header>BEDAYTAK - Sales & Marketing Estimator</header>
+
+    <div class="container text-center mt-5">
+      <h1 id="serviceTitle"></h1>
+
+      <div class="container">
+        <div class="main-content">
+          <div class="sales">
+            <h2>Sales Estimator</h2>
+            <div class="para">
+              <p>Stop guessing and start estimating!</p>
+              <p>
+                Our Sales Estimator helps you forecast and grow with clarity.
+              </p>
+            </div>
+
+            <form id="salesForm">
+              <!-- Business Details -->
+              <div class="form-group">
+                <label for="product">What are you selling?</label>
+                <input type="text" id="product" name="product" required />
+              </div>
+
+              <div class="form-group">
+                <label for="price">Average price per item:</label>
+                <input
+                  type="text"
+                  id="price"
+                  name="price"
+                  placeholder="Ex: 50LE"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="customersNumber"
+                  >Expected customers per month:</label
+                >
+                <input
+                  type="text"
+                  id="customersNumber"
+                  name="customersNumber"
+                  placeholder="Ex: 100 customers"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="monthsSelling">Months selling per year:</label>
+                <input
+                  type="text"
+                  id="monthsSelling"
+                  name="monthsSelling"
+                  placeholder="Ex: 12 months"
+                  required
+                />
+              </div>
+
+              <br /><br />
+
+              <!-- Marketing Estimator Section -->
+
+              <br />
+
+              <div class="form-group">
+                <button type="submit" id="submit-sales">Submit</button>
+              </div>
+            </form>
+          </div>
+          <!-- sales div -->
+        </div>
+        <!-- main-content div -->
+      </div>
+      <!-- container div -->
+    </div>
+    <!-- outer container -->
+
+    <!-- Scripts -->
+    <script>
+      const serviceName = localStorage.getItem("selectedService") || "Service";
+      document.getElementById("serviceTitle").textContent = serviceName;
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/sales.js"></script>
+  </body>
+</html>

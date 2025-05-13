@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Consultancy- BEDAYTAK</title>
+    <link rel="icon" type="image/png" href="../images/logo.png" />
+
+    <link rel="stylesheet" href="../css/businessConsultancy.css" />
+    <link rel="icon" type="image/png" href="images/logo.png" />
+  </head>
+
+  <body>
+    <header>BEDAYTAK - Business Consultancy</header>
+    <div class="container text-center mt-5">
+      <div class="container">
+        <div class="main-content">
+          <h2>Business Consultancy</h2>
+          <div class="para">
+            <p>Struggling with tough decisions? We've got your back.</p>
+            <p>
+              Connect with our expert consultants and start your transformation
+              today!
+            </p>
+          </div>
+
+          <form id="consultancyForm">
+            <!-- Business Details -->
+            <div class="form-group">
+              <label for="business-name">Business Name:</label>
+              <input
+                type="text"
+                id="business-name"
+                name="business-name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="industry">Industry Type:</label>
+              <input type="text" id="industry" name="industry" required />
+            </div>
+
+            <!-- Platform Navigation -->
+            <div class="form-group">
+              <label for="Business-Overview">Business Overview:</label>
+              <textarea
+                id="Business-Overview"
+                name="Business-Overview"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Update service name dynamically
+      const serviceName = localStorage.getItem("selectedService") || "Service";
+      document.getElementById("serviceTitle").textContent = serviceName;
+
+      // Handle form submission
+      document
+        .getElementById("consultancyForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent form from reloading the page
+
+          // Gather form data
+          const businessName = document.getElementById("business-name").value;
+          const industry = document.getElementById("industry").value;
+          const businessOverview =
+            document.getElementById("Business-Overview").value;
+
+          // Show success notification
+          Swal.fire({
+            icon: "success",
+            title: "Form Submitted!",
+            text: "Your business consultancy request has been submitted successfully!",
+            showConfirmButton: true,
+            confirmButtonText: "OK",
+            timer: 3000, // auto-close after 3 seconds
+          });
+
+          // Optionally, you can reset the form here
+          document.getElementById("consultancyForm").reset();
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/businessConsultancy.js"></script>
+  </body>
+</html>

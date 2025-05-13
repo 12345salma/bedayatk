@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Guidance - BEDAYTAK</title>
+    <link rel="icon" type="image/png" href="../images/logo.png" />
+
+    <link rel="stylesheet" href="../css/guidance.css" />
+    <link rel="icon" type="image/png" href="images/logo.png" />
+  </head>
+
+  <body>
+    <header>BEDAYTAK - Business Guidance</header>
+
+    <div class="container">
+      <div class="main-content">
+        <h2>Business Guidance</h2>
+        <div class="para">
+          <p>You've built the foundation — now build the future.</p>
+          <p>
+            Partner with us for expert business guidance every step of the way.
+          </p>
+        </div>
+        <form id="businessGuidance">
+          <!-- Business Stage -->
+          <div class="form-group">
+            <label for="businessGuidance"
+              >What stage is your business in?</label
+            >
+            <select id="businessGuidance" name="businessGuidance" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="just_idea">Just an idea</option>
+              <option value="started">Started</option>
+              <option value="running_awhile">Running for a while</option>
+            </select>
+          </div>
+
+          <!-- Monthly Profit -->
+          <div class="form-group">
+            <label for="monthlyProfit"
+              >Are you currently making monthly profit?</label
+            >
+            <select id="monthlyProfit" name="monthlyProfit" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="no_profit">No profit</option>
+              <option value="small_inconsistent">Small/Inconsistent</option>
+              <option value="steady_profit">Steady profit</option>
+            </select>
+          </div>
+
+          <!-- Customer Base -->
+          <div class="form-group">
+            <label for="customerCount"
+              >How many customers do you get per month?</label
+            >
+            <select id="customerCount" name="customerCount" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="0-10">0-10</option>
+              <option value="10-100">10-100</option>
+              <option value="100+">100+</option>
+            </select>
+          </div>
+          <!-- Repeat Customers -->
+          <div class="form-group">
+            <label for="repeatCustomers">Do you have repeat customers?</label>
+            <select id="repeatCustomers" name="repeatCustomers" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="none">None</option>
+              <option value="some">Some</option>
+              <option value="regular">Regular</option>
+            </select>
+          </div>
+
+          <!-- Business Challenge -->
+          <div class="form-group">
+            <label for="mainChallenge"
+              >What's your main challenge right now?</label
+            >
+            <select id="mainChallenge" name="mainChallenge" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="funding">Funding</option>
+              <option value="operations">Managing operations</option>
+              <option value="marketing">Marketing</option>
+              <option value="not_sure">Not sure</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      const serviceName = localStorage.getItem("selectedService") || "Service";
+      document.getElementById("serviceTitle").textContent = serviceName;
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/guidance.js"></script>
+  </body>
+</html>

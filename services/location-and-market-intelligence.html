@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location Intelligence - BEDAYTAK</title>
+    <link rel="icon" type="image/png" href="../images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/location.css" />
+  </head>
+
+  <body>
+    <header>BEDAYTAK - Location Intelligence</header>
+
+    <div class="container text-center mt-5">
+      <div class="main-content">
+        <h2>Location Intelligence</h2>
+        <div class="para">
+          <p>Know your competitors' next move before they make it.</p>
+          <p>Use location data to position your business for success</p>
+        </div>
+
+        <form id="locationForm">
+          <div class="form-group">
+            <!-- Business Details -->
+            <label for="business-name">Business Name:</label>
+            <input
+              type="text"
+              id="business-name"
+              name="business-name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="industry">Industry Type:</label>
+            <select id="industry" name="industry" required>
+              <option value="" disabled selected>Select an option</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const serviceName = localStorage.getItem("selectedService") || "Service";
+      document.getElementById("serviceTitle").textContent = serviceName;
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/location.js"></script>
+  </body>
+</html>

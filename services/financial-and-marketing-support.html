@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feasibility Study - BEDAYTAK</title>
+    <link rel="icon" type="image/png" href="../images/logo.png" />
+    <link rel="stylesheet" href="../css/financial.css" />
+    <link rel="icon" type="image/png" href="images/logo.png" />
+  </head>
+  <body>
+    <header>BEDAYTAK - Feasibility Study</header>
+    <div class="container text-center mt-5">
+      <!-- <h1 id="serviceTitle"></h1> -->
+      <div class="container">
+        <div class="main-content">
+          <h2>Feasibility Study</h2>
+          <div class="para">
+            <p>Before you invest, assess the risks.</p>
+            <p>
+              Let our experts guide your next move with a feasibility study.
+            </p>
+          </div>
+          <form id="financialForm">
+            <!-- Business Details -->
+            <div class="form-group">
+              <label for="business-name">Business Name:</label>
+              <input
+                type="text"
+                id="business-name"
+                name="business-name"
+                required
+              />
+            </div>
+
+            <!-- <div class="form-group">
+                    <label for="industry">Industry Type:</label>
+                    <input type="text" id="industry" name="industry" required>
+                </div> -->
+
+            <!-- Budget & Finance Fields -->
+            <div class="form-group">
+              <label for="revenue">Monthly Revenue:</label>
+              <input
+                type="number"
+                id="revenue"
+                name="revenue"
+                placeholder="How much you expect per month in EGP"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="costs">Monthly Costs:</label>
+              <input
+                type="number"
+                id="costs"
+                name="costs"
+                placeholder="How much you'll spend per month in EGP"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="Startup-Costs">Startup Costs:</label>
+              <input
+                type="number"
+                id="Startup-Costs"
+                name="Startup-Costs"
+                placeholder="One-time setup costs"
+                required
+              />
+            </div>
+
+            <!-- <div class="form-group">
+                    <label for="expectedROI">Expected ROI (Months):</label>
+                    <input type="number" id="expectedROI" name="expectedROI" placeholder="Months until return on investment" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="registrationCost">Registration Cost:</label>
+                    <input type="number" id="registrationCost" name="registrationCost" placeholder="Enter amount in EGP" required>
+                </div> -->
+
+            <!-- Business Details
+              <div class="form-group">
+                  <label for="business-name">Business Name:</label>
+                  <input type="text" id="business-name" name="business-name" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="industry">Industry Type:</label>
+                  <input type="text" id="industry" name="industry" required>
+              </div>
+
+              Budget & Finance Fields -->
+            <!-- <div class="form-group">
+                  <label for="budget">Estimated Monthly Marketing Budget:</label>
+                  <input type="number" id="budget" name="budget" placeholder="Enter amount in EGP" required>
+              </div>
+
+              <div class="form-group">
+
+
+                   <div class="form-group">
+                      <label for="spending-priority">Primary Spending Focus:</label>
+                      <select id="spending-priority" name="spending-priority" required>
+                          <option value="" disabled selected>Select an option</option>
+                          <option value="ads">Advertising & Promotions</option>
+                          <option value="branding">Branding & Design</option>
+                          <option value="research">Market Research & Analysis</option>
+                          <option value="customer-engagement">Customer Engagement & Retention</option>
+                      </select>
+                  </div> 
+                  
+              </div>
+
+              <-- Market Trend Analysis -->
+            <!-- <div class="form-group">
+                  <label for="market-trends">What market trends are most relevant to your business?</label>
+                  <textarea id="market-trends" name="market-trends" rows="3" placeholder="Emerging technology, industry shifts, customer behavior changes" required></textarea>
+              </div> -->
+
+            <!-- Conversion Strategy -->
+            <!-- <div class="form-group">
+                  <label for="conversion-strategy">Current Conversion Strategy:</label>
+                  <textarea id="conversion-strategy" name="conversion-strategy" rows="3" placeholder="Describe your lead generation & customer conversion plan" required></textarea>
+              </div> -->
+
+            <!-- Expiry Date -->
+            <div class="form-group">
+              <label for="expiry">Expected launching date (MM/YY):</label>
+              <input
+                type="text"
+                id="expiry"
+                name="expiry"
+                maxlength="5"
+                placeholder="MM/YY"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <button type="submit" id="submit-feasbility">submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const serviceName = localStorage.getItem("selectedService") || "Service";
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/feasbility.js"></script>
+  </body>
+</html>
